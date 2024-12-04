@@ -1,0 +1,25 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--preto);
+  color: var(--cinza);
+  border-radius: 4px;
+  padding: 8px;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: var(--roza);
+  transition: all 0.3s ease-in-out;
+  scale: 1.1;
+}
+
+.button[tipo="secondary"] {
+  background-color: var(--roza);
+}
+
+.button[tipo="secondary"]:hover {
+  background-color: var(--preto);
+}

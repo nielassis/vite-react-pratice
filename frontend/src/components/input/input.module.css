@@ -1,0 +1,20 @@
+.input {
+  border: 1px solid var(--preto);
+  border-radius: 4px;
+  padding: 8px;
+  width: 300px;
+  color: #313131;
+}
+
+.input::placeholder {
+  color: #313131;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid var(--roza);
+}
+
+.input:focus::placeholder {
+  color: var(--roza);
+}

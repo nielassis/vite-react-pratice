@@ -1,7 +1,15 @@
 .header {
+  display: flex;
+  justify-content: space-between;
   color: var(--cinza);
   background-color: var(--preto);
   padding: 0.25rem 0.5rem;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--cinza);
 }
 
 .header h1 {

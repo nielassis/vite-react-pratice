@@ -1,21 +1,8 @@
 import { ListItem } from "./items";
 import style from "./list.module.css";
 
-const List = () => {
-  const tasks = [
-    {
-      id: 1,
-      taskName: "Tarefa 1",
-    },
-    {
-      id: 2,
-      taskName: "Tarefa 2",
-    },
-    {
-      id: 3,
-      taskName: "Tarefa 3",
-    },
-  ];
+const List = (props) => {
+  const { tasks } = props;
   return (
     <ul className={style.list}>
       {tasks.map((task) => (

@@ -35,7 +35,17 @@ export default [
       ],
       "react/prop-types": [
         "error",
-        { ignore: ["children", "name", "texto", "type", "taskName"] },
+        {
+          ignore: [
+            "children",
+            "name",
+            "texto",
+            "type",
+            "taskName",
+            "tasks",
+            "setTasks",
+          ],
+        },
       ],
     },
   },

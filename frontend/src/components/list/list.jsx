@@ -6,8 +6,9 @@ const List = () => {
   const { tasks } = useAppContext();
   return (
     <ul className={style.list}>
+      {!tasks.length && <p>Não há tarefas</p>}
       {tasks.map((task) => (
-        <ListItem key={task.id} taskName={task.taskName} />
+        <ListItem key={task.id} id={task.id} taskName={task.taskName} />
       ))}
     </ul>
   );

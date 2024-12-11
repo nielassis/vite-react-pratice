@@ -1,8 +1,8 @@
 import style from "./button.module.css";
-import { type_button } from "./constants";
+import { TYPE_BUTTON } from "./constants";
 
 const Button = (props) => {
-  const { texto, type = type_button.primary, ...otherProps } = props;
+  const { texto, type = TYPE_BUTTON.PRIMARY, ...otherProps } = props;
   return (
     <button type={type} {...otherProps} className={style.button}>
       {texto}

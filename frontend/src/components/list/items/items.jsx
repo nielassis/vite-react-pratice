@@ -1,12 +1,19 @@
-import { Button, type_button } from "../../button";
+import { useAppContext } from "../../../hooks";
+import { Button, TYPE_BUTTON } from "../../button";
 import style from "./items.module.css";
 
 const ListItem = (props) => {
-  const { taskName } = props;
+  const { id, taskName } = props;
+
+  const { removeTask } = useAppContext();
   return (
     <li className={style.item}>
       {taskName}
-      <Button texto="-" type={type_button.secondary} />
+      <Button
+        texto="-"
+        type={TYPE_BUTTON.SECONDARY}
+        onClick={() => removeTask(id)}
+      />
     </li>
   );
 };

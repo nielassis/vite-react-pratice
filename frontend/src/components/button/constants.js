@@ -1,4 +1,4 @@
-export const type_button = Object.freeze({
-  primary: "primary",
-  secondary: "secondary",
+export const TYPE_BUTTON = Object.freeze({
+  PRIMARY: "PRIMARY",
+  SECONDARY: "SECONDARY",
 });

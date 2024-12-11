@@ -35,8 +35,17 @@ export const AppContextProvider = (props) => {
     });
   };
 
+  const removeTask = (taskId) => {
+    setTasks((currentState) => {
+      const updatedTasks = currentState.filter((tasks) => tasks.id !== taskId);
+
+      return [...updatedTasks];
+    });
+  };
   return (
-    <AppContext.Provider value={{ criador, setCriador, tasks, createTask }}>
+    <AppContext.Provider
+      value={{ criador, setCriador, tasks, createTask, removeTask }}
+    >
       {children}
     </AppContext.Provider>
   );
